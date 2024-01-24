@@ -1,0 +1,16 @@
+@import url(./fonts/stylesheet.css);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body{
+    width: 100vw;
+    height: fit-content;
+    font-family: 'Apercu Medium';
+}

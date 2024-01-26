@@ -3,6 +3,14 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --coderoom-navy: #10162f;
+    --coderoom-yellow: #ffd300;
+    --coderoom-abstract: #eafdc6;
+    --coderoom-blue: #3a10e5;
+    --coderoom-white: #fff0e5;
+  }
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -14,3 +22,8 @@ body{
     height: fit-content;
     font-family: 'Apercu Medium';
 }
+
+/* 'coderoom-navy': '#10162f',
+// 'coderoom-yellow': '#ffd300',
+// 'coderoom-abstract': '#eafdc6',
+// 'coderoom-blue': '#3a10e5' */

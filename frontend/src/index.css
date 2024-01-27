@@ -11,6 +11,25 @@
     --coderoom-white: #fff0e5;
   }
 
+::-webkit-scrollbar-track
+  {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      background-color: #F5F5F5;
+  }
+  
+::-webkit-scrollbar
+  {
+      width: 15px;
+      background-color: #F5F5F5;
+  }
+  
+::-webkit-scrollbar-thumb
+  {
+      -webkit-box-shadow: inset 0 0 6px rgba(42, 42, 42, 0.3);
+      background-color: #505050;
+  }
+  
+  
 *{
     box-sizing: border-box;
     margin: 0;
@@ -21,8 +40,26 @@ body{
     width: 100vw;
     height: fit-content;
     font-family: 'Apercu Medium';
+    background: #fff0e5;
 }
 
+.aman{
+    animation: typing 6s steps(23, end) infinite, cursor 0.4s step-end infinite alternate;
+}
+
+@keyframes cursor{
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing{
+    0%{
+        width: 0;
+    }
+    50% { width: 100% } /* typing ends */
+    100% { width: 100% } /* pause for remaining time (4s) */
+}
 /* 'coderoom-navy': '#10162f',
 // 'coderoom-yellow': '#ffd300',
 // 'coderoom-abstract': '#eafdc6',

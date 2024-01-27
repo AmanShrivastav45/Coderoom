@@ -32,6 +32,7 @@
     font-weight: bold;
     font-style: normal;
     font-display: swap;
+    line-height: 72px;
 }
 
 @font-face {

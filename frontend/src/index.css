@@ -10,6 +10,17 @@
     --coderoom-blue: #3a10e5;
     --coderoom-white: #fff0e5;
   }
+  
+  .home,
+  .services,
+  .reports,
+  .contact,
+  .events,
+  .support {
+      display: flex;
+      margin-left: 260px;
+      font-size: 2rem;
+  }
 
 ::-webkit-scrollbar-track
   {

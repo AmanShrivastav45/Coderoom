@@ -9,13 +9,14 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import Layout from "./Layout.jsx";
-import Home from "./components/Home/Home.jsx";
-import About from "./components/About/About.jsx";
-import Contact from "./components/Contact/Contact.jsx";
-import Github, { githubInfoLoader } from "./components/Github/Github.jsx";
-import Problems from "./components/Problems/Problems.jsx";
-import Ide from "./components/Ide/Ide.jsx";
-import Signup from "./components/Authentication/Signup.jsx";
+import Home from "./pages/Home/Home.jsx";
+import About from "./pages/About/About.jsx";
+import Contact from "./pages/Contact/Contact.jsx";
+import Github, { githubInfoLoader } from "./pages/Github/Github.jsx";
+import Problems from "./pages/Problems/Problems.jsx";
+import Ide from "./pages/Ide/Ide.jsx";
+import Signup from "./pages/Authentication/Signup.jsx";
+import Login from "./pages/Authentication/Login.jsx"
 
 const router = createBrowserRouter([
   {
@@ -47,6 +48,11 @@ const router = createBrowserRouter([
   {
     path: "signup",
     element: <Signup />,
+  },
+  ,
+  {
+    path: "/login",
+    element: <Login />,
   },
 ]);
 

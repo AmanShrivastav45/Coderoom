@@ -1,8 +1,7 @@
 import React from 'react'
 import {Link, NavLink} from 'react-router-dom'
-import Logo from '../images/Logo.png'
+import Logo from '../../images/Logo.png'
 import '../../fonts/stylesheet.css'
-import Signup from '../Authentication/Signup'
 
 export default function Header() {
     return (
@@ -19,7 +18,7 @@ export default function Header() {
                     <div className="flex items-center lg:order-2">
                         
                         <Link
-                            to='/signup'
+                            to='/login'
                             className="Apercu-Medium text-black border-solid border-2 transition duration-200 ease-in-out border-[#10162f]  hover:text-white bg-[white] hover:bg-[#10162f] rounded-md text-base px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
                         >
                             Sign Up

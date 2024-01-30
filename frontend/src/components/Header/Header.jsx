@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link, NavLink} from 'react-router-dom'
-import Logo from '../../images/Logo.png'
+import Logo from '../../images/Logofghd.png'
 import '../../fonts/stylesheet.css'
 
 export default function Header() {
@@ -8,13 +8,14 @@ export default function Header() {
         <header className="shadow fixed w-screen z-50 top-0 bg-[#fff0e5]">
             <nav className="border-b border-solid border-[#98a9ec] px-4 lg:px-6 py-2.5">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-                    <Link to="/" className="flex items-center ">
+                    <Link to="/" className="flex items-center Apercu-Pro-Bold font-extrabold">
                         <img
                             src={Logo}
-                            className="mr-3 h-7 "
+                            className="mr-3 h-9"
                             alt="Logo"
                         />
                     </Link>
+                    
                     <div className="flex items-center lg:order-2">
                         
                         <Link

@@ -1,38 +1,47 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Typography } from "@material-tailwind/react";
- 
+import Logo from "../../images/Logofghd.png";
+
 const LINKS = [
   {
-    title: "Product",
-    items: ["Overview", "Features", "Solutions", "Tutorials"],
+    title: "Learn",
+    items: [
+      "Data Structures",
+      "Operating Systems",
+      "Database Management",
+      "Computer Networks",
+    ],
   },
   {
-    title: "Company",
-    items: ["About us", "Careers", "Press", "News"],
+    title: "Roadmaps",
+    items: [
+      "Web Development",
+      "Data Analyst",
+      "Devops Engineer",
+      "Frontend Developer",
+    ],
   },
   {
-    title: "Resource",
-    items: ["Blog", "Newsletter", "Events", "Help center"],
+    title: "Aptitude",
+    items: ["Verbal", "Quantitative", "Reasoning", "Data Interpretation"],
   },
 ];
- 
+
 const currentYear = new Date().getFullYear();
 export default function Footer() {
   return (
     <footer className="relative w-full pt-10">
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="grid grid-cols-1 items-center gap-4 md:grid-cols-2">
-          <Typography variant="h5" className="mb-6">
-            Coderoom
-          </Typography>
+          <img src={Logo} className="mr-3 h-14" alt="Logo" />
           <div className="grid grid-cols-3 justify-between gap-4">
             {LINKS.map(({ title, items }) => (
               <ul key={title}>
                 <Typography
                   variant="small"
                   color="blue-gray"
-                  className="mb-3 font-medium opacity-40"
+                  className="mb-3 text-base Apercu-Medium opacity-50"
                 >
                   {title}
                 </Typography>
@@ -42,7 +51,7 @@ export default function Footer() {
                       as="a"
                       href="#"
                       color="gray"
-                      className="py-1.5 font-normal transition-colors hover:text-blue-gray-900"
+                      className="py-1.5 Apercu-Regular transition-colors hover:text-blue-gray-900"
                     >
                       {link}
                     </Typography>
@@ -58,7 +67,7 @@ export default function Footer() {
             className="mb-4 text-center font-normal text-blue-gray-900 md:mb-0"
           >
             &copy; {currentYear}{" "}
-            <a href="https://material-tailwind.com/">Material Tailwind</a>. All
+            <a href="https://material-tailwind.com/">Coderoom Official</a>. All
             Rights Reserved.
           </Typography>
           <div className="flex gap-4 text-blue-gray-900 sm:justify-center">

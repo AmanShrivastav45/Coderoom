@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link, NavLink} from 'react-router-dom'
-import Logo from '../../images/Logofghd.png'
+import Logo from '../../images/Logo.png'
 import '../../fonts/stylesheet.css'
 
 export default function Header() {
@@ -11,7 +11,7 @@ export default function Header() {
                     <Link to="/" className="flex items-center Apercu-Pro-Bold font-extrabold">
                         <img
                             src={Logo}
-                            className="mr-3 h-9"
+                            className="mr-3 h-7"
                             alt="Logo"
                         />
                     </Link>
@@ -42,7 +42,7 @@ export default function Header() {
                             </li>
                             <li>
                                 <NavLink
-                                to="/about"
+                                to="/learn"
                                     className={({isActive}) =>
                                         `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-blue-700" : "text-black"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-700 lg:p-0`
                                     }
@@ -71,14 +71,14 @@ export default function Header() {
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink
-                                to="/contact"
+                                <a
+                                href="/assess.coderoom"
                                     className={({isActive}) =>
                                         `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-blue-700" : "text-black"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-700 lg:p-0`
                                     }
                                 >
-                                    Coderoom
-                                </NavLink>
+                                    Contests
+                                </a>
                             </li>
                             
                         </ul>

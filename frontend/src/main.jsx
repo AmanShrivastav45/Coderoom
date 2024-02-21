@@ -10,13 +10,14 @@ import {
 } from "react-router-dom";
 import Layout from "./Layout.jsx";
 import Home from "./pages/Home/Home.jsx";
-import About from "./pages/About/About.jsx";
+import Learn from "./pages/Learn/Learn.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
 import Github, { githubInfoLoader } from "./pages/Github/Github.jsx";
 import Problems from "./pages/Problems/Problems.jsx";
 import Ide from "./pages/Ide/Ide.jsx";
 import Signup from "./pages/Authentication/Signup.jsx";
 import Login from "./pages/Authentication/Login.jsx"
+import Quiz from "./quiz/quiz.jsx";
 
 const router = createBrowserRouter([
   {
@@ -28,8 +29,8 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "about",
-        element: <About />,
+        path: "learn",
+        element: <Learn />,
       },
       {
         path: "contact",
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login />,
+  },
+  {
+    path: "/assess.coderoom",
+    element: <Quiz />,
   },
 ]);
 
